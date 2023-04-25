@@ -1,4 +1,5 @@
 package com.example.ratemypopcorn
 
-class MovieDetailActivity {
+class OptionsActivity {
+
 }

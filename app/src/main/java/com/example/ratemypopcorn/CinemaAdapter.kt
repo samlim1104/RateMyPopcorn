@@ -38,4 +38,6 @@ class CinemaAdapter(var dataset: List<CinemaData>): RecyclerView.Adapter<CinemaA
 
         }
     }
+
+    override fun getItemCount() = dataset.size
 }
