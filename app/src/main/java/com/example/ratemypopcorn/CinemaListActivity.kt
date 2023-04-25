@@ -37,7 +37,7 @@ class CinemaListActivity : AppCompatActivity() {
             ) {
                 Log.d(TAG, "onResponse: ${response.body()}")
                 adapter = CinemaAdapter(response.body()!!)
-                binding.recyclerViewList.adapter = adapter
+                binding.recyclerViewCinemaList.adapter = adapter
                 binding.recyclerViewCinemaList.layoutManager =
                     LinearLayoutManager(this@CinemaListActivity)
             }
@@ -47,5 +47,4 @@ class CinemaListActivity : AppCompatActivity() {
             }
         })
     }
-}
 }
