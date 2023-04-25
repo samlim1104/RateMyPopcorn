@@ -21,7 +21,7 @@ class CinemaListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCinemalistBinding.inflate(layoutInflater)
+        binding = ActivtyCinemaListBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getCinemaDataByGeolocationApiCall()
 

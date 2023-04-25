@@ -11,12 +11,14 @@ class CinemaAdapter(var dataset: List<CinemaData>): RecyclerView.Adapter<CinemaA
 {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view){
         val textViewName: TextView
-        val textViewRating: TextView
+        val textViewCity: TextView
+        val textViewAddress: TextView
         val layout: ConstraintLayout
 
         init {
             textViewName = view.findViewById(R.id.textView_cinema_name)
-            textViewRating = view.findViewById(R.id.textView_cinema_rating)
+            textViewCity = view.findViewById(R.id.textView_cinema_city)
+            textViewAddress = view.findViewById(R.id.textView_address)
             layout = view.findViewById(R.id.layout_cinema)
         }
     }
@@ -30,6 +32,10 @@ class CinemaAdapter(var dataset: List<CinemaData>): RecyclerView.Adapter<CinemaA
         val data = dataset[position]
         var context = holder.textViewName.context
         holder.textViewName.text = data.cinema_name
-        holder.textViewRating
+        holder.textViewCity.text = data.city
+        holder.textViewAddress.text = data.address
+        holder.layout.setOnClickListener{
+            val fru
+        }
     }
 }
