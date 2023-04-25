@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface CinemaDataService {
     @GET("geolocation")
-    fun getFishDataBySpecies(): Call<List<CinemaData>>
+    fun getCinemaDataByGeolocation(): Call<List<CinemaData>>
 }
