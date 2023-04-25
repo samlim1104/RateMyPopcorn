@@ -7,52 +7,68 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="89dp"
+        android:id="@+id/main_popcorn"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="81dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/main_snacks"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/snacks" />
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="261dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/main_soda"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_hotdog"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/main_popcorn"
+        tools:srcCompat="@drawable/soda" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="258dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/main_slurpee"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_pizza"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/main_snacks"
+        tools:srcCompat="@drawable/slurpee" />
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="463dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/main_hotdog"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        tools:srcCompat="@drawable/hotdog" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="463dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:id="@+id/main_pizza"
+        android:layout_width="180dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        tools:srcCompat="@drawable/pizza" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
