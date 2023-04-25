@@ -1,4 +1,9 @@
 package com.example.ratemypopcorn
 
-class CinemaData {
-}
+import com.google.gson.annotations.SerializedName
+
+@Parcelize
+data class CinemaData(
+    @SerializedName("Species Name")
+    val speciesName: String?,
+) : Parcelable
