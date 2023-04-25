@@ -42,35 +42,10 @@ class CinemaListActivity : AppCompatActivity() {
                     LinearLayoutManager(this@CinemaListActivity)
             }
 
-            override fun onFailure(call: Call<List<FishData>>, t: Throwable) {
+            override fun onFailure(call: Call<List<CinemaData>>, t: Throwable) {
                 Log.d(TAG, "onFailure: ${t.message}")
             }
         })
     }
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.datalist_menu, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle item selection
-        return when (item.itemId) {
-            R.id.item_dataList_sortByName-> {
-                adapter.dataSet = adapter.dataSet.sortedBy{
-                    it.speciesName
-                }
-                adapter.notifyDataSetChanged()
-                true
-            }
-            R.id.item_dataList_sortByCalorie -> {
-                adapter.dataSet = adapter.dataSet.sortedBy {
-                    it.calories
-                }
-                adapter.notifyDataSetChanged()
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
     }
 }

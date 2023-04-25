@@ -4,7 +4,7 @@ import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MovieAdapter(var dataset: List<CinemaData>): RecyclerView.Adapter<MovieAdapter.ViewHolder>()
+class CinemaAdapter(var dataset: List<CinemaData>): RecyclerView.Adapter<CinemaAdapter.ViewHolder>()
 {
     class ViewHolder(view: View): RecyclerView.ViewHolder(view){
         val textViewName: TextView

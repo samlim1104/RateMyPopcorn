@@ -8,50 +8,51 @@
 
     <ImageView
         android:id="@+id/main_popcorn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="89dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/main_candy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="81dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/main_popcorn"
+        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/main_soda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="261dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/main_popcorn"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/main_slurpee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="227dp"
-        tools:layout_editor_absoluteY="258dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/main_candy"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/main_hotdog"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="463dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/main_soda"
         tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/main_pizza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="234dp"
-        tools:layout_editor_absoluteY="463dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/main_slurpee"
         tools:srcCompat="@tools:sample/avatars" />
 
     <androidx.constraintlayout.widget.Guideline
