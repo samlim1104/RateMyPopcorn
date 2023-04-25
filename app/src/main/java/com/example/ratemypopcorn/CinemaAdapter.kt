@@ -35,7 +35,7 @@ class CinemaAdapter(var dataset: List<CinemaData>): RecyclerView.Adapter<CinemaA
         holder.textViewCity.text = data.city
         holder.textViewAddress.text = data.address
         holder.layout.setOnClickListener{
-            val fru
+
         }
     }
 }
