@@ -1,11 +1,11 @@
 package com.example.ratemypopcorn
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ratemypopcorn.databinding.ActivityCinemalistBinding
 import retrofit2.Call
@@ -47,5 +47,5 @@ class CinemaListActivity : AppCompatActivity() {
             }
         })
     }
-    }
+}
 }
