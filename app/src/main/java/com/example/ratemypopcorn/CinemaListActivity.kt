@@ -21,7 +21,7 @@ class CinemaListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivtyCinemaListBinding.inflate(layoutInflater)
+        binding = ActivityCinemalistBinding.inflate(layoutInflater)
         setContentView(binding.root)
         getCinemaDataByGeolocationApiCall()
 
@@ -37,7 +37,7 @@ class CinemaListActivity : AppCompatActivity() {
             ) {
                 Log.d(TAG, "onResponse: ${response.body()}")
                 adapter = CinemaAdapter(response.body()!!)
-                binding.recyclerViewList.adapter = adapter
+                binding.recyclerViewCinemaList.adapter = adapter
                 binding.recyclerViewCinemaList.layoutManager =
                     LinearLayoutManager(this@CinemaListActivity)
             }
